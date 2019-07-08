@@ -18,7 +18,30 @@
   <link href="assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+
 </head>
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">NOTICE:</h1>
+      </div>
+      <div class="modal-body">
+        <h2 style="color: black">Please note that our Node protocol is NOT ACTIVE, Please DO NOT try to setup a node you will lose your funds.</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:red">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <body class="">
   <div class="wrapper">
@@ -83,35 +106,59 @@
                 <img src="images/redsetup.png" style="height: 100%; width: 100%">
                 <br>
                 <br>
-                <center><h1>Redhat Based Node Setup:</h1></center>
-                <center><h4>Step 1: Add a user called XERO</h4></center>
+                <center>
+                  <h1>Redhat Based Node Setup:</h1>
+                </center>
+                <center>
+                  <h4>Step 1: Add a user called XERO</h4>
+                </center>
                 <center><code>adduser xero && passwd xero</code></center>
                 <br>
-                <center><h4>Step 2: Add the user xero as a sudo user</h4></center>
+                <center>
+                  <h4>Step 2: Add the user xero as a sudo user</h4>
+                </center>
                 <center><code>usermod -aG wheel xero</code></center>
                 <br>
-                <center><h4>Step 3: Update yum</h4></center>
+                <center>
+                  <h4>Step 3: Update yum</h4>
+                </center>
                 <center><code>sudo yum update </code></center>
                 <br>
-                <center><h4>Step 4: install wget</h4></center>
+                <center>
+                  <h4>Step 4: install wget</h4>
+                </center>
                 <center><code>sudo yum install wget systemd -y</code></center>
                 <br>
-                <center><h4>Step 5: Download the setup script for your node</h4></center>
+                <center>
+                  <h4>Step 5: Download the setup script for your node</h4>
+                </center>
                 <center><code> wget https://github.com/xero-official/scripts/releases/dow nload/0.0.1/renode.sh </code></center>
                 <br>
-                <center><h4>Step 6: Make the script executable</h4></center>
+                <center>
+                  <h4>Step 6: Make the script executable</h4>
+                </center>
                 <center><code>chmod +x renode.sh </code></center>
                 <br>
-                <center><h4>Step 7: Execute the script</h4></center>
+                <center>
+                  <h4>Step 7: Execute the script</h4>
+                </center>
                 <center><code>./renode.sh</code></center>
                 <br>
-                <center><h4>Step 8: Add your node by entering "1"</h4></center>
+                <center>
+                  <h4>Step 8: Add your node by entering "1"</h4>
+                </center>
                 <br>
-                <center><h4>Step 9: Select your type of node from the list</h4></center>
+                <center>
+                  <h4>Step 9: Select your type of node from the list</h4>
+                </center>
                 <br>
-                <center><h4>Step 10: Paste your private key containing the nodes collateral.</h4></center>
+                <center>
+                  <h4>Step 10: Paste your private key containing the nodes collateral.</h4>
+                </center>
                 <br>
-                <center><h4>Congradulations your node setup is complete.</h4></center>
+                <center>
+                  <h4>Congradulations your node setup is complete.</h4>
+                </center>
               </div>
             </div>
           </div>

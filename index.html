@@ -16,7 +16,44 @@
   <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+
 </head>
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">NOTICE:</h1>
+      </div>
+      <div class="modal-body">
+        <h2 style="color: black">Please note that our Node protocol is NOT ACTIVE, Please DO NOT try to setup a node you will lose your funds.</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:red">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal hide fade" id="myModal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
 <body class="">
   <div class="wrapper">
     <div class="sidebar">
@@ -79,35 +116,59 @@
                 <img src="images/debiansetup.png" style="height: 100%; width: 100%">
                 <br>
                 <br>
-                <center><h1>Debain Based Node Setup:</h1></center>
-                <center><h4>Step 1: Install Wget</h4></center>
+                <center>
+                  <h1>Debain Based Node Setup:</h1>
+                </center>
+                <center>
+                  <h4>Step 1: Install Wget</h4>
+                </center>
                 <center><code>apt-get install wget</code></center>
                 <br>
-                <center><h4>Step 2: Add a user called xero</h4></center>
+                <center>
+                  <h4>Step 2: Add a user called xero</h4>
+                </center>
                 <center><code>adduser xero</code></center>
                 <br>
-                <center><h4>Step 3: Add the xero user to a sudo role</h4></center>
+                <center>
+                  <h4>Step 3: Add the xero user to a sudo role</h4>
+                </center>
                 <center><code>adduser xero sudo</code></center>
                 <br>
-                <center><h4>Step 4: Switch to the new xero user</h4></center>
+                <center>
+                  <h4>Step 4: Switch to the new xero user</h4>
+                </center>
                 <center><code>su - xero</code></center>
                 <br>
-                <center><h4>Step 5: Download the setup script for your node</h4></center>
+                <center>
+                  <h4>Step 5: Download the setup script for your node</h4>
+                </center>
                 <center><code>wget https://github.com/xero-official/scripts/releases/download/0.0.1/node.sh</code></center>
                 <br>
-                <center><h4>Step 6: Make the script executable</h4></center>
+                <center>
+                  <h4>Step 6: Make the script executable</h4>
+                </center>
                 <center><code>chmod +x node.sh</code></center>
                 <br>
-                <center><h4>Step 7: Execute the script</h4></center>
+                <center>
+                  <h4>Step 7: Execute the script</h4>
+                </center>
                 <center><code>./node.sh</code></center>
                 <br>
-                <center><h4>Step 8: Add your node by entering "1"</h4></center>
+                <center>
+                  <h4>Step 8: Add your node by entering "1"</h4>
+                </center>
                 <br>
-                <center><h4>Step 9: Select your type of node from the list</h4></center>
+                <center>
+                  <h4>Step 9: Select your type of node from the list</h4>
+                </center>
                 <br>
-                <center><h4>Step 10: Paste your private key containing the nodes collateral.</h4></center>
+                <center>
+                  <h4>Step 10: Paste your private key containing the nodes collateral.</h4>
+                </center>
                 <br>
-                <center><h4>Congradulations your node setup is complete.</h4></center>
+                <center>
+                  <h4>Congradulations your node setup is complete.</h4>
+                </center>
               </div>
             </div>
           </div>

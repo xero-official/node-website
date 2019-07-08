@@ -18,7 +18,30 @@
   <link href="assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#myModal").modal('show');
+    });
+  </script>
+
 </head>
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">NOTICE:</h1>
+      </div>
+      <div class="modal-body">
+        <h2 style="color: black">Please note that our Node protocol is NOT ACTIVE, Please DO NOT try to setup a node you will lose your funds.</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:red">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <body class="">
   <div class="wrapper">
